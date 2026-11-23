@@ -1,0 +1,51 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{width:460px;font-family:-apple-system,"Helvetica Neue",Arial,sans-serif;background:#fff;color:#111}
+.banner{background:#ffefc2;color:#6b4a00;border-bottom:2px solid #f0c24a;padding:14px 18px;font-size:15px;font-weight:700;text-align:center;line-height:1.35}
+.banner small{display:block;font-weight:500;font-size:12.5px;margin-top:3px}
+.sec{padding:22px 18px;border-bottom:8px solid #f0f1f4}
+h2{font-size:22px;font-weight:800;margin-bottom:18px;display:flex;justify-content:space-between}
+h3{font-size:17px;font-weight:700;display:flex;justify-content:space-between;margin:6px 0 16px}
+.row{display:flex;justify-content:space-between;font-size:16px;padding:13px 0}
+hr{border:none;border-top:1px solid #e6e6e6;margin:14px 0}
+.donut{display:flex;justify-content:center;padding:10px 0 20px}
+.wm{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;font-size:72px;font-weight:900;color:rgba(200,140,0,.10);transform:rotate(-30deg)}
+</style></head><body>
+<div class="wm">ПРОГНОЗ</div>
+<div class="banner">ПРОГНОЗ / ПРИМЕР СТАТИСТИКИ<small>Целевые показатели — не фактические данные</small></div>
+<div id="p1">
+ <div class="sec"><h2>Обзор</h2>
+  <div class="row"><span>Просмотры</span><span>14,990</span></div>
+  <div class="row"><span>Взаимодействия</span><span>166</span></div>
+  <div class="row"><span>Действия в профиле</span><span>37</span></div>
+ </div>
+ <div class="sec" style="border:none"><h2>Просмотры</h2>
+  <div class="donut"><svg width="300" height="300" viewBox="0 0 300 300">
+   <circle cx="150" cy="150" r="135" fill="none" stroke="#c02ac0" stroke-width="16"
+     stroke-dasharray="776 72" stroke-dashoffset="-6" transform="rotate(-90 150 150)" stroke-linecap="round"/>
+   <circle cx="150" cy="150" r="135" fill="none" stroke="#5216d6" stroke-width="16"
+     stroke-dasharray="56 792" stroke-dashoffset="68" transform="rotate(-90 150 150)" stroke-linecap="round"/>
+   <text x="150" y="128" text-anchor="middle" font-size="15" fill="#222">Просмотры</text>
+   <text x="150" y="178" text-anchor="middle" font-size="46" font-weight="800">14,990</text>
+  </svg></div>
+ </div>
+</div>
+<div id="p2">
+ <div class="sec">
+  <h3><span>Нажатия на стикеры</span><span>220</span></h3>
+  <div class="row"><span>@stomatolog_selyutina</span><span>220</span></div>
+  <hr>
+  <h3><span>Навигация</span><span>14,030</span></h3>
+  <div class="row"><span>Вперед</span><span>13,260</span></div>
+  <div class="row"><span>Следующая история</span><span>370</span></div>
+  <div class="row"><span>Выходы</span><span>240</span></div>
+  <div class="row"><span>Назад</span><span>160</span></div>
+ </div>
+ <div class="sec" style="border:none">
+  <h2><span>Действия в профиле</span><span>37</span></h2>
+  <div class="row"><span>Посещения профиля</span><span>37</span></div>
+  <div class="row"><span>Подписки</span><span>0</span></div>
+ </div>
+</div>
+<script>const s=new URLSearchParams(location.search).get('p');document.getElementById(s==='1'?'p2':'p1').remove();</script>
+</body></html>
